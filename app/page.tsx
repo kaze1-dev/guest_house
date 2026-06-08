@@ -1,4 +1,5 @@
 import Description from "@/components/home/description";
+import Facilities from "@/components/home/facilities";
 import Gallery from "@/components/home/gallery";
 import Hero from "@/components/home/hero";
 import Rooms from "@/components/home/ourRooms";
@@ -15,6 +16,7 @@ export default function Home() {
       <Description />
       <Rooms />
       <Gallery />
+      <Facilities />
     </div>
   )
 }
