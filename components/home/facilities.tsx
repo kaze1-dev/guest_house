@@ -4,7 +4,7 @@ import { LuCar, LuCarFront } from 'react-icons/lu';
 
 const Facilities = () => {
   return (
-    <div className='pb-10'>
+    <div className='pb-10 max-w-6xl mx-auto'>
       <div>
         <h3 className='text-lg text-white/80 flex justify-center items-center font-bold gap-2 mb-6 mt-10'>
           <span className='border w-40 border-neutral-700 border-t-0 mt-0.5 rounded-full font-rounded' />

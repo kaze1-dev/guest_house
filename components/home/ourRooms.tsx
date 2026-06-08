@@ -3,7 +3,7 @@ import React from 'react'
 
 const Rooms = () => {
   return (
-    <div className=' px-6'>
+    <div className=' px-6 max-w-6xl mx-auto'>
       <div>
         <h3 className='text-lg text-white/80 flex justify-center items-center font-bold gap-2 mb-6 mt-10'>
           <span className='border w-40 border-neutral-700 border-t-0 mt-0.5 rounded-full font-rounded' />

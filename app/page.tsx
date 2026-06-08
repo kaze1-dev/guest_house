@@ -1,22 +1,22 @@
 import Description from "@/components/home/description";
 import Facilities from "@/components/home/facilities";
+import FAQs from "@/components/home/FAQs";
 import Gallery from "@/components/home/gallery";
 import Hero from "@/components/home/hero";
 import Rooms from "@/components/home/ourRooms";
 import Navbar from "@/components/navbar";
-import Image from "next/image";
-import { FaWhatsapp } from "react-icons/fa";
-import { HiCalendar } from "react-icons/hi2";
+
 
 export default function Home() {
   return (
-    <div className="bg-black min-h-screen text-white">
+    <div className="bg-black min-h-screen text-white pb-10">
       <Navbar />
       <Hero />
       <Description />
       <Rooms />
       <Gallery />
       <Facilities />
+      <FAQs />
     </div>
   )
 }
