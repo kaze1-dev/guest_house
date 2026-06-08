@@ -13,7 +13,7 @@ const Rooms = () => {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3'>
         <div className='border border-red-700 rounded-xl pb-6'>
-          <Image className='w-full h-auto rounded-xl' width={100} height={100} src='/bed11.jpeg' alt='Deluxe Room' />
+          <Image className='w-full h-auto rounded-xl' width={300} height={300} src='/bed11.jpeg' alt='Deluxe Room' />
           <h4 className='my-2 text-center font-bold text-lg font-rounded text-white/80'>Deluxe Room</h4>
           <div className='flex justify-around text-white/70'>
             <div className='flex flex-col gap-2 font-semibold'>
@@ -47,7 +47,7 @@ const Rooms = () => {
           </div>
         </div>
         <div className='border border-red-700 rounded-xl pb-6'>
-          <Image className='w-full h-auto rounded-xl' width={100} height={100} src='/bed7.jpeg' alt='Executive room' />
+          <Image className='w-full h-auto rounded-xl' width={300} height={300} src='/bed7.jpeg' alt='Executive room' />
           <h4 className='my-2 text-center font-bold text-lg font-rounded text-white/80'>Deluxe Room</h4>
           <div className='flex justify-around text-white/70'>
             <div className='flex flex-col gap-2'>
@@ -81,7 +81,7 @@ const Rooms = () => {
           </div>
         </div>
         <div className='border border-red-700 rounded-xl pb-6'>
-          <Image className='w-full h-auto rounded-xl' width={100} height={100} src='/bed9.jpeg' alt='Family Room' />
+          <Image className='w-full h-auto rounded-xl' width={300} height={300} src='/bed9.jpeg' alt='Family Room' />
           <h4 className='my-2 text-center font-bold text-lg font-rounded text-white/80'>Deluxe Room</h4>
           <div className='flex justify-around text-white/70'>
             <div className='flex flex-col gap-2 '>
