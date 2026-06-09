@@ -3,6 +3,7 @@ import Facilities from "@/components/home/facilities";
 import FAQs from "@/components/home/FAQs";
 import Gallery from "@/components/home/gallery";
 import Hero from "@/components/home/hero";
+import Location from "@/components/home/location";
 import Rooms from "@/components/home/ourRooms";
 import Navbar from "@/components/navbar";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Gallery />
       <Facilities />
       <FAQs />
+      <Location />
     </div>
   )
 }

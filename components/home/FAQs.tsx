@@ -16,7 +16,7 @@ const FAQs = () => {
     setOpenId(openId === id ? null : id);
   };
   return (
-    <div className='px-6 py-12 max-w-6xl mx-auto'>
+    <div className='px-6 pt-12 max-w-6xl mx-auto'>
       <h2 className='text-white/80 font-bold text-2xl mb-8 text-center md:text-left'>
         Frequently Asked Questions
       </h2>

@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full fixed px-10 py-2 z-30 bg-black/20 backdrop-blur-md">
-      <Image className="cursor-pointer" width={50} height={50} src='/GO-logo.webp' alt="Guest House Logo" />
+      <Image className="cursor-pointer" width={50} height={50} src='/GO-logo.webp' alt="Guest House Logo" loading='lazy' />
       <div className="flex gap-26 items-center">
         <nav className="flex gap-10 font-bold text-white/70 items-center">
           <div className="relative text-red-600 cursor-pointer hover:text-red-600 font-bold">
