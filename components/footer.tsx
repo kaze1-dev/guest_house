@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
@@ -5,7 +6,18 @@ import { BsFacebook, BsInstagram, BsTiktok, BsTwitterX, BsWhatsapp } from 'react
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
+  const handleTikTok = () => {
+    window.open('https://www.tiktok.com/@goguesthouselahore', '_blank', 'noopener,noreferrer');
+  };
+  const handleInstagram = () => {
+    window.open('https://www.instagram.com/goguesthouselahore?igsh=ZDRtODNlZGJvbDF3', '_blank', 'noopener,noreferrer');
+  }
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/923076372319', '_blank', 'noopener,noreferrer');
+  };
+  const handleFaceBook = () => {
+    window.open('https://wa.me/923076372319', '_blank', 'noopener,noreferrer');
+  };
   return (
 
     <div className='w-full bg-neutral-900/40 px-5 py-8 md:px-10 md:py-4'>
@@ -27,18 +39,18 @@ const Footer = () => {
             <h3 className='text-lg font-bold text-white/80 text-center'>Follow us</h3>
           </div>
           <div className='flex gap-6 text-white/80'>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-600 transition">
+            <button onClick={handleInstagram} className="hover:text-red-600 cursor-pointer transition">
               <BsInstagram size={20} />
-            </a>
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-600 transition">
+            </button>
+            <button onClick={handleTikTok} className="hover:text-red-600 cursor-pointer transition">
               <BsTiktok size={20} />
-            </a>
-            <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="hover:text-red-600 transition">
+            </button>
+            <button onClick={handleWhatsApp} className="hover:text-red-600 transition cursor-pointer">
               <BsWhatsapp size={20} />
-            </a>
-            <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="hover:text-red-600 transition">
+            </button>
+            <button onClick={handleFaceBook} className="hover:text-red-600 cursor-pointer transition">
               <BsFacebook size={20} />
-            </a>
+            </button>
           </div>
         </div>
 

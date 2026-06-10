@@ -8,7 +8,6 @@ const faqData = [
   { id: 3, q: "Is secure parking available on-site?", a: "Yes, we provide complimentary, secure parking space for all our staying guests with 24/7 security monitoring." },
   { id: 4, q: "Are utilities, Wi-Fi, and breakfast included in the room rate?", a: "High-speed Wi-Fi is completely free. Depending on your booking package, a complimentary traditional or continental breakfast is also included." },
   { id: 5, q: "What is the cancellation policy for bookings?", a: "Free cancellation is available up to 24 hours before your scheduled arrival date. Cancellations made within 24 hours may incur a one-night charge." },
-  { id: 6, q: "Do you offer airport shuttle services?", a: "Yes, we can arrange reliable airport pick-and-drop services upon request for an additional nominal fee." }
 ];
 
 const FAQs = () => {
