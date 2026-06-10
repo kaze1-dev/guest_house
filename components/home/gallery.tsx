@@ -44,7 +44,7 @@ const Gallery = () => {
 
       <div className='flex justify-center items-center mt-10'>
         <Link 
-          href='/about'
+          href='/gallery'
           className='px-5 py-2.5 rounded-xl border border-red-600 text-red-600 font-bold text-sm tracking-wide cursor-pointer flex items-center gap-2 hover:bg-red-600 hover:text-white transition-all duration-300 group'
         >
           <span>VIEW MORE</span>
