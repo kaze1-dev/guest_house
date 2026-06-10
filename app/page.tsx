@@ -4,6 +4,7 @@ import FAQs from "@/components/home/FAQs";
 import Gallery from "@/components/home/gallery";
 import Hero from "@/components/home/hero";
 import Location from "@/components/home/location";
+import Offer from "@/components/home/offer";
 import Rooms from "@/components/home/ourRooms";
 import Navbar from "@/components/navbar";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Rooms />
       <Gallery />
       <Facilities />
+      <Offer />
       <FAQs />
       <Location />
     </div>
