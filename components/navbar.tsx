@@ -13,6 +13,9 @@ const navLinks = [
 
 const Navbar = () => {
   const pathname = usePathname();
+  const handleCallToAction = () => {
+    window.location.href = 'tel:03076372319';
+  };
 
   return (
     <header className="fixed top-0 left-0 flex justify-between items-center w-full px-4 sm:px-10 py-2 z-30 bg-black/20 backdrop-blur-md">
@@ -47,7 +50,7 @@ const Navbar = () => {
             );
           })}
         </nav>
-        <button className="px-2 py-1 sm:px-6 sm:py-3 text-xs text-white/90 font-bold bg-red-600 rounded-lg sm:uppercase tracking-tighter sm:text-sm hover:bg-red-800 transition">
+        <button onClick={handleCallToAction} className="px-2 py-1 sm:px-6 sm:py-3 text-xs text-white/90 font-bold bg-red-600 rounded-lg sm:uppercase tracking-tighter sm:text-sm hover:bg-red-800 transition">
           Book Now
         </button>
       </div>
