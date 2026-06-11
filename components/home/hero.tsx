@@ -15,7 +15,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-[85vh] md:h-screen overflow-hidden font-rounded">
+    <div id='hero' className="relative w-full h-[85vh] md:h-screen overflow-hidden font-rounded">
       <Image
         src="/hero-image.jpeg"
         alt="Go Guest House Lahore Facade"

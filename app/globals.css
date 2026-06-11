@@ -11,4 +11,9 @@
 body {
   color: #ededed;
   font-family: var(--font-rounded);
+
+}
+
+html {
+  scroll-behavior: smooth;
 }

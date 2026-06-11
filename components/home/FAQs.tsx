@@ -4,7 +4,7 @@ import { HiChevronDown } from 'react-icons/hi2';
 
 const faqData = [
   { id: 1, q: "What is the exact location of Go Guest House Lahore?", a: "Go Guest House is centrally located in Lahore, offering easy access to major commercial hubs, shopping districts, and historical landmarks." },
-  { id: 2, q: "What are the standard check-in and check-out times?", a: "Standard check-in is from 2:00 PM, and check-out is until 12:00 PM. Early check-in or late check-out can be requested based on availability." },
+  { id: 2, q: "What are the standard check-in and check-out times?", a: "Standard check-in is from 12:00 PM, and check-out is until 12:00 PM (next day). Early check-in or late check-out can be requested based on availability." },
   { id: 3, q: "Is secure parking available on-site?", a: "Yes, we provide complimentary, secure parking space for all our staying guests with 24/7 security monitoring." },
   { id: 4, q: "Are utilities, Wi-Fi, and breakfast included in the room rate?", a: "High-speed Wi-Fi is completely free. Depending on your booking package, a complimentary traditional or continental breakfast is also included." },
   { id: 5, q: "What is the cancellation policy for bookings?", a: "Free cancellation is available up to 24 hours before your scheduled arrival date. Cancellations made within 24 hours may incur a one-night charge." },

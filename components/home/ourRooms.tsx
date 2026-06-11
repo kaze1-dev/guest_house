@@ -6,22 +6,24 @@ const Rooms = () => {
   const roomData = [
     {
       title: 'Deluxe Room',
-      image: '/bed11.jpeg',
+      image: '/bed9.jpeg',
       featuresLeft: ['King Size Bed', 'Smart TV', 'Free WiFi'],
       featuresRight: ['Air Conditioning', 'Attached Bath', 'Room Service']
     },
+
     {
       title: 'Executive Room',
-      image: '/bed7.jpeg',
+      image: '/go-3.jpg',
       featuresLeft: ['King Size Bed', 'Smart TV', 'Free WiFi'],
       featuresRight: ['Air Conditioning', 'Attached Bath', 'Room Service']
     },
     {
       title: 'Family Suite',
-      image: '/bed9.jpeg',
+      image: '/bed11.jpeg',
       featuresLeft: ['King Size Bed', 'Smart TV', 'Free WiFi'],
       featuresRight: ['Air Conditioning', 'Attached Bath', 'Room Service']
-    }
+    },
+
   ];
 
   return (

@@ -59,12 +59,12 @@ const Location = () => {
               </a>
             </div>
 
-            <div className='flex items-center gap-4'>
+            {/* <div className='flex items-center gap-4'>
               <BiGlobe className='text-red-600 shrink-0' size={22} />
               <a href="https://www.goguesthouselahore.com" target="_blank" rel="noopener noreferrer" className='text-sm text-white/70 hover:text-red-500 transition-colors font-rounded'>
                 www.goguesthouselahore.com
               </a>
-            </div>
+            </div> */}
 
             <div className='flex items-center gap-4'>
               <HiMail className='text-red-600 shrink-0' size={22} />

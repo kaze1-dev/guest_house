@@ -16,23 +16,24 @@ const Footer = () => {
     window.open('https://wa.me/923076372319', '_blank', 'noopener,noreferrer');
   };
   const handleFaceBook = () => {
-    window.open('https://wa.me/923076372319', '_blank', 'noopener,noreferrer');
+    window.open('https://www.facebook.com/share/18zgvCKJ5T/', '_blank', 'noopener,noreferrer');
   };
   return (
 
     <div className='w-full bg-neutral-900/40 px-5 py-8 md:px-10 md:py-4'>
 
       <div className='flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0'>
-
-        <div className='flex gap-2 text-white/80 items-center'>
-          <Image width={50} height={50} alt='Go Guest House Logo' src='/GO-logo.webp' />
-          <div>
-            <h3 className='flex flex-col font-bold leading-tight'>
-              <span>Go Guest House</span>
-              <span className='text-red-600'>Lahore</span>
-            </h3>
+        <Link href='#hero'>
+          <div className='flex gap-2 text-white/80 items-center'>
+            <Image width={50} height={50} alt='Go Guest House Logo' src='/GO-logo.webp' />
+            <div>
+              <h3 className='flex flex-col font-bold leading-tight'>
+                <span>Go Guest House</span>
+                <span className='text-red-600'>Lahore</span>
+              </h3>
+            </div>
           </div>
-        </div>
+        </Link>
 
         <div className='flex flex-col items-center md:items-start gap-3'>
           <div className=''>

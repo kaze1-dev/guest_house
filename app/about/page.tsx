@@ -117,10 +117,7 @@ const AboutPage = () => {
               <BsWhatsapp className='text-green-500 shrink-0' size={20} />
               <p className='text-sm text-white/70'>0307 6372319</p>
             </div>
-            <div className='flex items-center gap-4'>
-              <BiGlobe className='text-red-600 shrink-0' size={20} />
-              <p className='text-sm text-white/70 hover:text-red-500 transition cursor-pointer'>www.goguesthouselahore.com</p>
-            </div>
+
             <div className='flex items-center gap-4'>
               <HiMail className='text-red-600 shrink-0' size={20} />
               <p className='text-sm text-white/70 hover:text-red-500 transition cursor-pointer'>goguesthouselahore@gmail.com</p>
