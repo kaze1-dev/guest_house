@@ -18,10 +18,18 @@ const FAQs = () => {
   };
 
   return (
-    <div className='py-16 px-6 max-w-4xl mx-auto w-full'>
-      <h2 className='text-white font-bold sm:text-3xl text-2xl mb-10 text-center tracking-wide'>
-        Frequently Asked Questions
-      </h2>
+    <div className='py-20 px-6 max-w-4xl mx-auto w-full bg-neutral-950 font-rounded'>
+      
+      {/* Premium Header Layout: Luxury fade line accents */}
+      <div className='flex justify-center items-center gap-4 mb-12 mt-4'>
+        <span className='h-[1px] w-12 bg-gradient-to-r from-transparent to-neutral-700' />
+        <h2 className='text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-neutral-400 text-center'>
+          Frequently Asked Questions
+        </h2>
+        <span className='h-[1px] w-12 bg-gradient-to-l from-transparent to-neutral-700' />
+      </div>
+
+      {/* Accordion List Container */}
       <div className='space-y-4 max-w-3xl mx-auto'>
         {faqData.map((faq) => {
           const isOpen = openId === faq.id;
@@ -29,33 +37,44 @@ const FAQs = () => {
           return (
             <div 
               key={faq.id}
-              className={`bg-neutral-900/40 px-5 rounded-xl border transition-all duration-300 ${
-                isOpen ? 'border-neutral-700 bg-neutral-900/70' : 'border-neutral-800/60'
+              className={`bg-neutral-900/20 backdrop-blur-sm px-6 rounded-2xl border transition-all duration-500 overflow-hidden ${
+                isOpen 
+                  ? 'border-neutral-800 bg-neutral-900/40 shadow-[0_15px_30px_-15px_rgba(0,0,0,0.8),0_0_25px_rgba(220,38,38,0.02)]' 
+                  : 'border-neutral-900/80 hover:border-neutral-800'
               }`}
             >
+              {/* Accordion Trigger Row */}
               <div 
                 onClick={() => toggleFAQ(faq.id)} 
                 className='flex items-center justify-between py-5 cursor-pointer select-none gap-4 group'
                 role="button"
                 aria-expanded={isOpen}
               >
-                <p className={`font-semibold text-sm md:text-base leading-snug transition-colors duration-200 ${
-                  isOpen ? 'text-white' : 'text-white/80 group-hover:text-white'
+                <p className={`font-medium text-sm md:text-base leading-snug transition-colors duration-300 ${
+                  isOpen ? 'text-white' : 'text-neutral-300 group-hover:text-white'
                 }`}>
                   {faq.q}
                 </p>
-                <HiChevronDown 
-                  size={18} 
-                  className={`stroke-2 shrink-0 transition-transform duration-300 ${
-                    isOpen ? 'rotate-180 text-red-500' : 'text-white/40 group-hover:text-white/80'
-                  }`} 
-                />
+                <div className={`p-1.5 rounded-lg border transition-all duration-300 shrink-0 ${
+                  isOpen 
+                    ? 'bg-neutral-950 border-neutral-800 text-red-500 shadow-[0_0_10px_rgba(220,38,38,0.2)]' 
+                    : 'bg-transparent border-transparent text-neutral-500 group-hover:text-neutral-300'
+                }`}>
+                  <HiChevronDown 
+                    size={16} 
+                    className={`stroke-2 transition-transform duration-500 ease-out ${
+                      isOpen ? 'rotate-180' : 'rotate-0'
+                    }`} 
+                  />
+                </div>
               </div>
+
+              {/* Dynamic Expandable Height Container */}
               <div className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
                 isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
               }`}>
                 <div className="overflow-hidden">
-                  <p className="pb-5 text-white/60 text-sm md:text-base leading-relaxed antialiased">
+                  <p className="pb-6 pt-1 text-neutral-400 text-sm md:text-[15px] leading-relaxed font-light antialiased border-t border-neutral-900/40 mt-1">
                     {faq.a}
                   </p>
                 </div>
@@ -68,4 +87,4 @@ const FAQs = () => {
   );
 }
 
-export default FAQs
+export default FAQs;
